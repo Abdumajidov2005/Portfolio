@@ -1,0 +1,61 @@
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-radius: 100px;
+  background: linear-gradient(
+    90deg,
+    rgb(13, 40, 24, 1),
+    rgb(4, 71, 28, 0.5),
+    rgb(5, 140, 66, 0.5),
+    rgb(22, 219, 101, 0.7)
+  );
+  box-shadow:
+    0 0 60px 20px rgb(5, 140, 66, 0.3),
+    inset 0 0 10px rgb(14, 180, 84, 0.05);
+    mix-blend-mode: screen;
+    backdrop-filter: blur(4px);
+  margin-top: 20px;
+}
+
+nav .links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+h1 {
+  color: white;
+}
+
+.links li {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.links li:hover {
+  color: orange;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icons p {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+}
