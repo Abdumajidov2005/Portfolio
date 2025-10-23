@@ -22,7 +22,7 @@ function Hero() {
           </div>
           <div className="bg-color"></div>
           <div class="hero_right">
-            <img src="./imgs/images.jpg" alt="" />
+            <img src="imgs/user.png" alt="" />
           </div>
         </div>
       </div>

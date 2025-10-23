@@ -16,12 +16,7 @@ function Navbar() {
           <li>Skill</li>
         </ul>
         <div class="icons">
-          <p>
-            <FaUser />
-          </p>
-          <p>
-            <FaPhoneVolume />
-          </p>
+          <button>Contact</button>
         </div>
       </div>
     </nav>

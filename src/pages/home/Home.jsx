@@ -7,7 +7,13 @@ function Home() {
     <>
       <Hero />
       <div className="home">
-        <div className="container"></div>
+        <div className="container">
+           <div className="education">
+               <div className="education_title">
+                   <h2>Ma'lumoti</h2>
+               </div>
+           </div>
+        </div>
       </div>
     </>
   );

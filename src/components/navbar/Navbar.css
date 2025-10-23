@@ -11,11 +11,10 @@ nav .container {
     rgb(5, 140, 66, 0.5),
     rgb(22, 219, 101, 0.7)
   );
-  box-shadow:
-    0 0 60px 20px rgb(5, 140, 66, 0.3),
+  box-shadow: 0 0 60px 20px rgb(5, 140, 66, 0.3),
     inset 0 0 10px rgb(14, 180, 84, 0.05);
-    mix-blend-mode: screen;
-    backdrop-filter: blur(4px);
+  mix-blend-mode: screen;
+  backdrop-filter: blur(4px);
   margin-top: 20px;
 }
 
@@ -48,14 +47,20 @@ h1 {
   gap: 10px;
 }
 
-.icons p {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 1px solid white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.icons button {
+  padding: 10px 40px;
+  border-radius: 100px;
+  background: linear-gradient(
+    90deg,
+    rgb(29, 126, 68),
+    rgba(21, 121, 56, 0.5),
+    rgb(5, 140, 66, 0.5),
+    rgb(22, 219, 101, 0.7)
+  );
+  border: none;
   color: white;
+  font-size: 18px;
+  font-weight: 600;
   cursor: pointer;
+  box-shadow: 0px 0px 4px 2px rgb(4, 71, 28, 0.5);
 }
