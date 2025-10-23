@@ -1,3 +1,10 @@
+nav {
+  position: sticky;
+  width: 100%;
+  top: 0px;
+  z-index: 99;
+}
+
 nav .container {
   display: flex;
   align-items: center;
@@ -13,9 +20,8 @@ nav .container {
   );
   box-shadow: 0 0 60px 20px rgb(5, 140, 66, 0.3),
     inset 0 0 10px rgb(14, 180, 84, 0.05);
-  mix-blend-mode: screen;
-  backdrop-filter: blur(4px);
   margin-top: 20px;
+  backdrop-filter: blur(20px);
 }
 
 nav .links {

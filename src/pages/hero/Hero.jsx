@@ -4,9 +4,9 @@ import "./Hero.css";
 function Hero() {
   return (
     <>
-      <div class="hero">
-        <div class="container">
-          <div class="hero_left">
+      <div className="hero">
+        <div className="container">
+          <div className="hero_left">
             <p className="hero_left-content1">WELCOME TO MY PORTFOLIO</p>
             <h1><span>Hi,</span> <span> I'm</span> O'tkirbek</h1>
             <h3><span>Frontend</span> Developer</h3>
@@ -15,13 +15,13 @@ function Hero() {
               eligendi enim atque fugiat nesciunt tempore porro error, 
               perspiciatis eent.
             </p>
-            <div class="btns">
+            <div className="btns">
               <button>Explore</button>
               <button>About</button>
             </div>
           </div>
           <div className="bg-color"></div>
-          <div class="hero_right">
+          <div className="hero_right">
             <img src="imgs/user.png" alt="" />
           </div>
         </div>

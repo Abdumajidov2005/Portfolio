@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Port+Lligat+Sans&display=swap");
+
+.education {
+  width: 100%;
+  padding: 70px 0px;
+  position: relative;
+}
+
+.education-neons {
+  width: 900px;
+  height: 400px;
+  background: radial-gradient(
+    circle at center,
+    #16db6553 0%,
+    #0eb4532d 70%,
+    transparent 100%
+  );
+
+  box-shadow: 0 0 600px 200px rgba(5, 140, 66, 0.121),
+    inset 0 0 300px rgba(14, 180, 83, 0.179);
+
+  mix-blend-mode: screen;
+  filter: blur(60px);
+  position: absolute;
+  top: 100px;
+  z-index: -1;
+  left: 0px;
+  border-radius: 50%;
+}
+
+.education_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.education_title h2 {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.education_title p {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.education_title .education_plus button {
+  padding: 10px 40px;
+  border-radius: 100px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  background-color: #0eb454;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.education_plus button svg {
+  font-size: 16px;
+}
+
+.education-boxs {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 26px;
+  margin-top: 20px;
+}
+
+.education-boxs .edu-box {
+  width: 280px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #188a4651 0%, #176638 50%, #17663853 100%);
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: "Port Lligat Sans", sans-serif;
+  cursor: pointer;
+}
+
+.swiper {
+  padding: 10px 0px !important;
+}
+
+.edu-box li {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(208, 206, 206);
+}
+
+.swiper-pagination-bullet {
+  display: none !important;
+}
+
+.swiper-button-prev {
+  background-color: green;
+  color: white !important;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.swiper-button-next {
+  background-color: green;
+  color: white !important;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.skills-title h2 {
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.skills-title p {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.skills-content {
+  padding: 30px 0px;
+  display: flex;
+  align-items: start;
+  justify-content: left;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.loader-border {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+  justify-content: left;
+}
+
+.loader_card {
+  background: linear-gradient(
+    90deg,
+    rgb(10, 50, 10),
+    rgb(15, 70, 15),
+    rgb(20, 90, 20),
+    rgb(15, 70, 15),
+    rgb(10, 50, 10)
+  );
+
+  background-size: 500%;
+  width: 280px;
+  height: 290px;
+  border-radius: 5px;
+  animation: loaderpath2 10s linear infinite;
+}
+
+@keyframes loaderpath2 {
+  0% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: 300%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+
+.content-card {
+  width: 280px;
+  background: linear-gradient(
+    90deg,
+    rgb(18, 90, 18, 1),
+    rgb(24, 101, 24, 1),
+    rgb(7, 79, 7, 1)
+  );
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.content-card:hover {
+  /* background: linear-gradient(
+    90deg,
+    rgb(18, 90, 18, 1),
+    rgb(24, 101, 24, 1),
+    rgb(7, 79, 7, 1)
+  ); */
+  opacity: 1;
+  transform: translateY(-7px);
+}
+
+.card-imgs {
+  width: 100%;
+  height: 200px;
+}
+
+.card-imgs img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.content-card h3 {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color: rgb(208, 206, 206);
+}
+
+.content-card p {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 10px;
+  background-color: rgba(14, 180, 83, 0.274);
+  border-radius: 100px;
+  color: rgb(208, 206, 206);
+}
