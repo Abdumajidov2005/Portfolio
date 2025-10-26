@@ -19,6 +19,8 @@ function Home() {
   const [skill, setSkill] = useState(null);
   const [loaderSkill, setLoaderSkill] = useState(false);
 
+  const [showMore, setShowMore] = useState(false);
+
   useEffect(() => {
     setLoaderSkill(true);
     getSkillsData()
@@ -205,8 +207,20 @@ function Home() {
                   <div className="loader_card"></div>
                   <div className="loader_card"></div>
                 </div>
+              ) : showMore ? (
+                skill?.slice(0).map((item) => {
+                  return (
+                    <div className="content-card">
+                      <div className="card-imgs">
+                        <img src={item?.icon} alt="" />
+                      </div>
+                      <h3>{item?.name}</h3>
+                      <p>{item?.percentage}%</p>
+                    </div>
+                  );
+                })
               ) : (
-                skill?.map((item) => {
+                skill?.slice(0, 4).map((item) => {
                   return (
                     <div className="content-card">
                       <div className="card-imgs">
@@ -218,6 +232,50 @@ function Home() {
                   );
                 })
               )}
+            </div>
+            <div className="btns skill-btns">
+              {showMore ? (
+                <button
+                  onClick={() => {
+                    setShowMore(false);
+                  }}
+                >
+                  Show less
+                </button>
+              ) : (
+                <button
+                  onClick={() => {
+                    setShowMore(true);
+                  }}
+                >
+                  Show More
+                </button>
+              )}
+            </div>
+          </div>
+
+          <div className="experience">
+            <div className="experience-title">
+              <h2>Ish tajribam</h2>
+              <p>Mening shu vaqtgacha ishlagan joylarim haqida ma'lumot</p>
+            </div>
+            <div className="experience-content">
+              <ul className="experience-card">
+                <li>Job title: Frontend</li>
+                <li>Company: Codial</li>
+              </ul>
+               <ul className="experience-card">
+                <li>Job title: Frontend</li>
+                <li>Company: Codial</li>
+              </ul>
+               <ul className="experience-card">
+                <li>Job title: Frontend</li>
+                <li>Company: Codial</li>
+              </ul>
+               <ul className="experience-card">
+                <li>Job title: Frontend</li>
+                <li>Company: Codial</li>
+              </ul>
             </div>
           </div>
         </div>

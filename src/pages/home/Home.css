@@ -113,6 +113,15 @@
   border-radius: 50%;
 }
 
+.skills {
+  padding: 50px 0px;
+}
+
+.skill-btns{
+  width: 100%;
+  text-align: center;
+}
+
 .skills-title h2 {
   font-size: 22px;
   font-weight: 500;
@@ -189,12 +198,6 @@
 }
 
 .content-card:hover {
-  /* background: linear-gradient(
-    90deg,
-    rgb(18, 90, 18, 1),
-    rgb(24, 101, 24, 1),
-    rgb(7, 79, 7, 1)
-  ); */
   opacity: 1;
   transform: translateY(-7px);
 }
@@ -225,4 +228,52 @@
   background-color: rgba(14, 180, 83, 0.274);
   border-radius: 100px;
   color: rgb(208, 206, 206);
+}
+
+.experience-title h2 {
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.experience-title p {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+}
+
+.experience{
+  padding: 60px 0px;
+}
+
+.experience-content {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 0px;
+}
+
+.experience-card {
+  width: 280px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #188a4651 0%, #176638 50%, #17663853 100%);
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: "Port Lligat Sans", sans-serif;
+  cursor: pointer;
+}
+
+.experience-card li {
+  margin-bottom: 5px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.experience-card li:last-child {
+  margin-bottom: 0px;
 }
