@@ -1,0 +1,551 @@
+@import url("https://fonts.googleapis.com/css2?family=Port+Lligat+Sans&display=swap");
+
+.education {
+  width: 100%;
+  padding: 70px 0px;
+  position: relative;
+}
+
+.education-neons {
+  width: 900px;
+  height: 400px;
+  background: radial-gradient(
+    circle at center,
+    rgba(6, 194, 72, 0.25) 0%,
+    rgba(5, 156, 58, 0.15) 70%,
+    transparent 100%
+  );
+
+  box-shadow: 0 0 400px 150px rgba(5, 156, 58, 0.08),
+    inset 0 0 200px rgba(5, 156, 58, 0.1);
+
+  mix-blend-mode: screen;
+  filter: blur(60px);
+  position: absolute;
+  top: 100px;
+  z-index: -1;
+  left: 0px;
+  border-radius: 50%;
+}
+
+.education_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.education_title h2 {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.education_title p {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.education_title .education_plus button {
+  padding: 10px 40px;
+  border-radius: 100px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  background: linear-gradient(135deg, #059c3a 0%, #04752e 100%);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.education_plus button svg {
+  font-size: 16px;
+}
+
+.education-boxs {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 26px;
+  margin-top: 20px;
+}
+
+.education-boxs .edu-box {
+  width: 280px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, rgba(10, 61, 31, 0.6) 0%, rgba(5, 41, 26, 0.8) 50%, rgba(10, 61, 31, 0.6) 100%);
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: "Port Lligat Sans", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.education-boxs .edu-box:hover {
+  border-color: #059c3a;
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(5, 156, 58, 0.3);
+}
+
+.swiper {
+  padding: 10px 0px !important;
+}
+
+.edu-box li {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(208, 206, 206);
+}
+
+.swiper-pagination-bullet {
+  display: none !important;
+}
+
+.swiper-button-prev {
+  background-color: #059c3a;
+  color: white !important;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.swiper-button-next {
+  background-color: #059c3a;
+  color: white !important;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.skills {
+  padding: 50px 0px;
+}
+
+.skill-btns {
+  width: 100%;
+  text-align: center;
+}
+
+.skills-title h2 {
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.skills-title p {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.skills-content {
+  padding: 30px 0px;
+  display: flex;
+  align-items: start;
+  justify-content: left;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.loader-border {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+  justify-content: left;
+}
+
+.loader_card {
+  background: linear-gradient(
+    90deg,
+    rgba(10, 61, 31, 0.5),
+    rgba(5, 41, 26, 0.7),
+    rgba(5, 156, 58, 0.4),
+    rgba(5, 41, 26, 0.7),
+    rgba(10, 61, 31, 0.5)
+  );
+
+  background-size: 500%;
+  width: 280px;
+  height: 290px;
+  border-radius: 5px;
+  animation: loaderpath2 10s linear infinite;
+}
+
+@keyframes loaderpath2 {
+  0% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: 300%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+
+.content-card {
+  width: 280px;
+  background: linear-gradient(
+    90deg,
+    rgba(10, 61, 31, 0.9),
+    rgba(5, 41, 26, 0.95),
+    rgba(3, 61, 26, 0.9)
+  );
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  opacity: 0.7;
+  position: relative;
+  overflow: hidden;
+}
+
+.content-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(5, 156, 58, 0.2),
+    transparent
+  );
+  transform: rotate(45deg);
+  transition: all 0.6s ease;
+}
+
+.content-card:hover::before {
+  left: 100%;
+}
+
+.content-card:hover {
+  opacity: 1;
+  transform: translateY(-7px);
+  box-shadow: 0 10px 30px rgba(5, 156, 58, 0.3);
+}
+
+.card-imgs {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  z-index: 1;
+}
+
+.card-imgs img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.content-card:hover .card-imgs img {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.content-card h3 {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color: rgb(208, 206, 206);
+  position: relative;
+  z-index: 1;
+}
+
+.content-card p {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 10px;
+  background-color: rgba(5, 156, 58, 0.2);
+  border-radius: 100px;
+  color: rgb(208, 206, 206);
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.content-card:hover p {
+  background-color: rgba(5, 156, 58, 0.4);
+}
+
+.experience-title h2 {
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.experience-title p {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+}
+
+.experience {
+  padding: 60px 0px;
+}
+
+.experience-content {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 0px;
+}
+
+.experience-card {
+  width: 280px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, rgba(10, 61, 31, 0.6) 0%, rgba(5, 41, 26, 0.8) 50%, rgba(10, 61, 31, 0.6) 100%);
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: "Port Lligat Sans", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.experience-card:hover {
+  border-color: #059c3a;
+  box-shadow: 0 5px 20px rgba(5, 156, 58, 0.3);
+}
+
+.experience-card li {
+  margin-bottom: 5px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.experience-card li:last-child {
+  margin-bottom: 0px;
+}
+
+.project_cards {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 20px;
+  padding: 50px 0px;
+}
+
+.project_card {
+  width: 280px;
+  background: linear-gradient(
+    90deg,
+    rgba(10, 61, 31, 0.9),
+    rgba(5, 41, 26, 0.95),
+    rgba(3, 61, 26, 0.9)
+  );
+  border-radius: 10px;
+  padding: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  opacity: 0.7;
+  position: relative;
+  overflow: hidden;
+}
+
+.project_card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    transparent 0%,
+    rgba(5, 156, 58, 0.15) 50%,
+    transparent 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project_card:hover::after {
+  opacity: 1;
+}
+
+.project_card:hover {
+  opacity: 1;
+  transform: translateY(-7px);
+  box-shadow: 0 15px 40px rgba(5, 156, 58, 0.35);
+}
+
+.project_card .project_card-img {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.project_card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project_card:hover .project_card-img img {
+  transform: scale(1.1);
+}
+
+.project_card h3 {
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.project_card p {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.project_card a {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #06c248;
+  gap: 10px;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.project_card a:hover {
+  gap: 15px;
+  color: #fff;
+}
+
+.project_card a svg {
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.project_card a:hover svg {
+  transform: scale(1.2);
+}
+
+.create_message {
+  width: 100%;
+  border-radius: 10px;
+  padding: 30px;
+  background: linear-gradient(135deg, #059c3a 0%, #04752e 100%);
+  box-shadow: 0 10px 40px rgba(5, 156, 58, 0.25);
+  margin-bottom: 50px;
+}
+
+.create_message .create_message-title{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.create_message input {
+  flex: 1;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.create_message input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.create_message input:focus {
+  border-color: white;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.create_message textarea{
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  resize: none;
+  padding: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.create_message textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.create_message textarea:focus {
+  border-color: white;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.create_message .submit-btn {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  background: white;
+  color: #059c3a;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.create_message .submit-btn:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.project_title {
+  margin-bottom: 20px;
+}
+
+.project_title h2 {
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.project_title p {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+}

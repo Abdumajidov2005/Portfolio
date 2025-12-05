@@ -1,0 +1,99 @@
+nav {
+  position: sticky;
+  width: 100%;
+  top: 0px;
+  z-index: 99;
+  transition: all 0.3s ease;
+}
+
+nav.scrolled .container {
+  padding: 8px 20px;
+  box-shadow: 0 0 50px 20px rgba(5, 156, 58, 0.35),
+    inset 0 0 15px rgba(5, 156, 58, 0.1);
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-radius: 100px;
+  background: linear-gradient(
+    90deg,
+    rgba(10, 61, 31, 0.95),
+    rgba(5, 41, 26, 0.9),
+    rgba(5, 156, 58, 0.4),
+    rgba(6, 194, 72, 0.5)
+  );
+  box-shadow: 0 0 40px 15px rgba(5, 156, 58, 0.25),
+    inset 0 0 10px rgba(5, 156, 58, 0.05);
+  margin-top: 20px;
+  backdrop-filter: blur(20px);
+  transition: all 0.3s ease;
+}
+
+nav .links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+h1 {
+  color: white;
+}
+
+.links li {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.links li a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.links li:hover {
+  color: #059c3a;
+}
+
+.links li:hover a {
+  color: #059c3a;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icons button {
+  padding: 10px 40px;
+  border-radius: 100px;
+  background: linear-gradient(
+    90deg,
+    rgba(5, 156, 58, 0.9),
+    rgba(4, 117, 46, 0.8),
+    rgba(5, 156, 58, 0.7)
+  );
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0px 0px 4px 2px rgba(5, 156, 58, 0.4);
+  transition: all 0.3s ease;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.icons button a {
+  color: white;
+  text-decoration: none;
+}

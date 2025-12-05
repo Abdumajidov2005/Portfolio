@@ -1,0 +1,87 @@
+.about-page {
+  min-height: 100vh;
+  padding: 100px 0 50px;
+}
+
+.about-hero {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.about-hero h1 {
+  font-size: 48px;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.about-hero p {
+  font-size: 20px;
+  color: #059c3a;
+  letter-spacing: 2px;
+}
+
+.about-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-section {
+  margin-bottom: 60px;
+}
+
+.about-text h2 {
+  font-size: 32px;
+  color: white;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.about-card {
+  background: linear-gradient(135deg, #0a3d1f 0%, #05291a 100%);
+  padding: 40px 30px;
+  border-radius: 15px;
+  text-align: center;
+  border: 2px solid rgba(5, 156, 58, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.about-card:hover {
+  border-color: #059c3a;
+  box-shadow: 0 10px 40px rgba(5, 156, 58, 0.4);
+}
+
+.card-icon {
+  font-size: 50px;
+  color: #059c3a;
+  margin-bottom: 20px;
+}
+
+.about-card h3 {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.about-card p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+}
